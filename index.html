@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=https://centerlineaviationinc.com" />
   <title>Redirecting…</title>
-  <script>window.location.replace("https://centerlineaviationinc.com");</script>
+  <script>
+    if (window.location.hostname === 'offers.centerlineaviationinc.com') {
+      window.location.replace('https://centerlineaviationinc.com');
+    } else {
+      window.location.replace('/discovery-flight');
+    }
+  </script>
 </head>
 <body></body>
 </html>
