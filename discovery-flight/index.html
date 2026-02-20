@@ -621,9 +621,14 @@
           <div class="w-full rounded-2xl shadow-xl p-8 md:p-12" style="background: linear-gradient(to bottom, rgba(46,46,46,0.35) 0%, rgba(46,46,46,0.5) 100%);">
 
             <form id="discovery-form" novalidate class="space-y-6">
-              <!-- Honeypot -->
-              <div style="position:absolute;left:-9999px;width:1px;height:1px;" aria-hidden="true">
+              <!-- Honeypot traps: hidden from real users, bots fill these in -->
+              <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+                <label for="df-honeypot">Leave this blank</label>
                 <input type="text" id="df-honeypot" name="honeypot" tabindex="-1" autocomplete="off" />
+                <label for="df-website">Website</label>
+                <input type="url" id="df-website" name="website" tabindex="-1" autocomplete="off" />
+                <label for="df-company">Company</label>
+                <input type="text" id="df-company" name="company" tabindex="-1" autocomplete="off" />
               </div>
 
               <!-- Name row -->
@@ -829,17 +834,27 @@
 
     // --- Form submission ---
     (function () {
-      var WEBHOOK = 'https://services.leadconnectorhq.com/hooks/10LCZDnUvwfyH3005w5r/webhook-trigger/4848fb32-c55a-4923-8645-e31688d687a4';
+      var WEBHOOK = 'https://services.leadconnectorhq.com/hooks/10LCZDnUvwfyH3005w5r/webhook-trigger/mPfu50bDL6o4jACKXv5H';
       var form = document.getElementById('discovery-form');
       var submitBtn = document.getElementById('form-submit');
       var submitLabel = document.getElementById('submit-label');
       var errorDiv = document.getElementById('form-error');
 
+      // Record when the form first became interactive
+      var formLoadTime = Date.now();
+
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
 
-        // Honeypot check
-        if (document.getElementById('df-honeypot').value) {
+        // Honeypot checks: any hidden field filled = bot
+        var isBot =
+          document.getElementById('df-honeypot').value ||
+          document.getElementById('df-website').value ||
+          document.getElementById('df-company').value ||
+          (Date.now() - formLoadTime < 3000); // submitted in under 3 seconds = bot
+
+        if (isBot) {
+          // Silently fake success so bots think they got through
           setTimeout(function () { window.location.href = '/discovery-flight-thank-you'; }, 800);
           return;
         }
