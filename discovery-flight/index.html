@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17843692381"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17843692381');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <title>Discovery Flight Spanish Fork | $149 Intro Flight | Centerline Aviation</title>
+  <meta name="description" content="Book a $149 discovery flight at Spanish Fork Airport. Fly a modern Diamond DA40 with an experienced instructor. No experience needed. Book online or call (801) 477-0418." />
+
+  <link rel="apple-touch-icon" href="https://pub-b9b491aee0b94c2c8e6c5d1dde4848db.r2.dev/public/images/logo/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="https://pub-b9b491aee0b94c2c8e6c5d1dde4848db.r2.dev/public/images/logo/favicon-96x96.png" />
+  <link rel="icon" type="image/x-icon" href="https://pub-b9b491aee0b94c2c8e6c5d1dde4848db.r2.dev/public/images/logo/favicon.ico" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            heading: ['Manrope', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Manrope font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- UTM capture — runs before anything else -->
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var utmData = {};
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(function (k) {
+        var v = params.get(k); if (v) utmData[k] = v;
+      });
+      ['gclid', 'fbclid', 'msclkid'].forEach(function (k) {
+        var v = params.get(k); if (v) utmData[k] = v;
+      });
+      if (Object.keys(utmData).length > 0) localStorage.setItem('utm_params', JSON.stringify(utmData));
+    })();
+  </script>
+
+  <style>
+    body { font-family: 'Manrope', sans-serif; }
+
+    /* Hero background zoom animation */
+    @keyframes heroZoomOut {
+      0%   { opacity: 0; transform: scale(1.08); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .hero-bg {
+      animation: heroZoomOut 3s cubic-bezier(0.12, 0.23, 0.5, 1) forwards;
+      will-change: transform;
+    }
+
+    /* CTA button (white pill) */
+    .cta-button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      background: white;
+      color: #1f2937;
+      padding: 0 4px 0 24px;
+      border: none;
+      border-radius: 24px;
+      font-weight: 400;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+      height: 48px;
+      min-height: 48px;
+    }
+    .cta-button::after {
+      content: '→';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #1f2937;
+      color: white;
+      border-radius: 50%;
+      font-size: 1.25rem;
+      transform: rotate(-45deg);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      flex-shrink: 0;
+    }
+    .cta-button:hover { background: #cccccc; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18); }
+    .cta-button:hover::after { transform: rotate(0deg); }
+
+    /* Secondary button (glassmorphic) */
+    .secondary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 0.875rem 2rem;
+      border-radius: 100px;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      white-space: nowrap;
+    }
+    .secondary-button:hover { background: rgba(255, 255, 255, 0.25); }
+
+    /* Dark CTA button (inverted — for light backgrounds) */
+    .cta-button-dark {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      background: #1f2937;
+      color: white;
+      padding: 0 4px 0 24px;
+      border: none;
+      border-radius: 24px;
+      font-weight: 400;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+      height: 48px;
+      min-height: 48px;
+    }
+    .cta-button-dark::after {
+      content: '→';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: white;
+      color: #1f2937;
+      border-radius: 50%;
+      font-size: 1.25rem;
+      transform: rotate(-45deg);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      flex-shrink: 0;
+    }
+    .cta-button-dark:hover { background: #374151; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24); }
+    .cta-button-dark:hover::after { transform: rotate(0deg); }
+
+    /* Form submit button override */
+    #discovery-form .cta-button {
+      justify-content: space-between;
+      gap: 0;
+      padding: 0 4px 0 24px;
+      width: 100%;
+    }
+
+    /* Form inputs */
+    .form-input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: rgba(46, 46, 46, 0.5);
+      border: 1px solid rgba(46, 46, 46, 0.5);
+      color: white;
+      border-radius: 0.5rem;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.2s;
+      color-scheme: dark;
+    }
+    .form-input::placeholder { color: #999; }
+    .form-input:focus { box-shadow: 0 0 0 2px white; border-color: white; }
+    .form-label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: white;
+      margin-bottom: 0.5rem;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    /* Navbar transitions */
+    #lp-header {
+      transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #lp-header.lp-scrolled {
+      background-color: white;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.09);
+    }
+    #lp-nav {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      transition: padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #lp-header.lp-scrolled #lp-nav {
+      padding-top: 0.375rem;
+      padding-bottom: 0.375rem;
+    }
+    #lp-logo {
+      height: 4rem;
+      width: auto;
+      transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media (min-width: 768px) { #lp-logo { height: 5rem; } }
+    #lp-header.lp-scrolled #lp-logo { height: 2.5rem; filter: invert(1); }
+    #lp-phone {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: white;
+      padding: 0.875rem 2rem;
+      border-radius: 100px;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #lp-phone:hover { background: rgba(255, 255, 255, 0.25); }
+    #lp-header.lp-scrolled #lp-phone {
+      background-color: #111827;
+      color: white;
+      padding: 0.5rem 1.25rem;
+      font-size: 0.875rem;
+    }
+    #lp-header.lp-scrolled #lp-phone:hover { background-color: #1f2937; }
+
+    /* Mobile CTA bar */
+    #mobile-cta-bar {
+      transform: translateY(100%);
+      opacity: 0;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+    }
+    #mobile-cta-bar.bar-visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    @media (min-width: 768px) { #mobile-cta-bar { display: none !important; } }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- ===================== STICKY HEADER ===================== -->
+  <header id="lp-header" class="fixed top-0 left-0 right-0 z-[1000]">
+    <nav id="lp-nav" class="flex justify-between items-center w-full px-8 max-w-[1200px] mx-auto">
+      <a href="/discovery-flight" aria-label="Centerline Aviation">
+        <svg id="lp-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1031.17" role="img" aria-label="Centerline Aviation">
+          <defs><style>.cls-1{fill:none}.cls-2{fill:#fff}</style></defs>
+          <path class="cls-2" d="M61.23,386.9c-15.5,0-23.26-9.12-23.26-27.37v-27.73c0-18.25,7.57-27.37,22.72-27.37,11.57,0,19.26,6.38,23.08,19.14l20.57-7.87c-2.74-10.13-7.9-17.92-15.48-23.35-7.57-5.43-17.2-8.14-28.89-8.14-14.43,0-25.61,4.09-33.54,12.26-7.93,8.17-11.9,19.89-11.9,35.15v28.09c0,15.27,4,26.99,11.99,35.16,7.99,8.17,19.32,12.26,33.99,12.26,11.93,0,21.74-2.71,29.43-8.14,7.69-5.42,12.91-13.21,15.65-23.34l-20.57-7.69c-3.94,12.64-11.87,18.96-23.8,18.96Z"/>
+          <polygon class="cls-2" points="125.26 407.12 207.56 407.12 207.56 386.9 148.69 386.9 148.69 356.85 197 356.85 197 336.63 148.69 336.63 148.69 308.01 207.56 308.01 207.56 287.79 125.26 287.79 125.26 407.12"/>
+          <polygon class="cls-2" points="293.41 363.29 293.05 363.29 249.17 287.79 227.21 287.79 227.21 407.12 249.76 407.12 249.76 328.94 250.11 328.94 295.56 407.12 315.95 407.12 315.95 287.79 293.41 287.79 293.41 363.29"/>
+          <polygon class="cls-2" points="335.33 308.01 368.25 308.01 368.25 407.12 391.69 407.12 391.69 308.01 424.61 308.01 424.61 287.79 335.33 287.79 335.33 308.01"/>
+          <polygon class="cls-2" points="444.27 407.12 526.56 407.12 526.56 386.9 467.7 386.9 467.7 356.85 516.01 356.85 516.01 336.63 467.7 336.63 467.7 308.01 526.56 308.01 526.56 287.79 444.27 287.79 444.27 407.12"/>
+          <path class="cls-2" d="M633.35,324.82c0-12.52-3.55-21.83-10.64-27.91-7.1-6.08-17.92-9.12-32.47-9.12h-44.01v119.33h23.44v-45.44h17.94l23.21,45.44h26.48l-26.3-48.13c14.91-4.77,22.36-16.16,22.36-34.17ZM604.73,337.44c-3.22,2.68-8.17,4.03-14.85,4.03h-20.21v-33.45h20.21c13.12,0,19.68,5.61,19.68,16.82,0,5.72-1.61,9.93-4.83,12.61Z"/>
+          <polygon class="cls-2" points="680.59 287.79 655.95 287.79 655.95 407.12 739.99 407.12 739.99 386.9 680.59 386.9 680.59 287.79"/>
+          <polygon class="cls-2" points="863.22 363.29 862.88 363.29 820.67 287.79 799.55 287.79 799.55 407.12 821.23 407.12 821.23 328.94 821.58 328.94 865.28 407.12 884.08 407.12 884.08 287.79 863.22 287.79 863.22 363.29"/>
+          <polygon class="cls-2" points="985.46 308.01 985.46 287.79 901.54 287.79 901.54 407.12 985.46 407.12 985.46 386.9 925.44 386.9 925.44 356.85 974.7 356.85 974.7 336.63 925.44 336.63 925.44 308.01 985.46 308.01"/>
+          <rect class="cls-2" x="758.68" y="121.13" width="23.44" height="119.33"/>
+          <rect class="cls-2" x="758.68" y="621.1" width="23.44" height="119.33"/>
+          <polygon class="cls-2" points="680.91 39.95 770.37 39.95 859.82 39.95 859.82 269.34 884.79 269.34 884.79 14.99 770.37 14.99 655.95 14.99 655.95 269.34 680.91 269.34 680.91 39.95"/>
+          <polygon class="cls-2" points="859.82 991.21 768.56 991.21 767.58 991.21 680.91 991.21 680.91 856.85 655.95 854.12 655.95 1016.18 884.79 1016.18 884.79 853.62 859.82 856.35 859.82 991.21"/>
+          <polygon class="cls-2" points="655.95 814.45 680.91 813.58 680.91 593.87 655.95 593.87 655.95 814.45"/>
+          <polygon class="cls-2" points="859.82 813.74 884.79 814.62 884.79 593.87 859.82 593.87 859.82 813.74"/>
+          <path class="cls-2" d="M909.68,822.92l-56.87-2.5v.74l-64.98-2.27s-2.2.51-2.2-3.24c0,0-1.71-36.22-3.17-41.25,0,0-.26-2.02-3.45-3.27l-4.03-1.46c3.38-.81,9.13-.81,9.13-.81,0,0,10.59-.76,10.59-1.27s-6.4-.74-6.4-.74l-14.42-.25c-1.14-3.43-2.97-8.53-3.94-8.53s-2.87,5.24-4.01,8.67c-3.08-.14-14.92-.63-19.58.05,0,0-2.94,0,0,.49,2.94.51,6.61,1.51,10.54,1.51,0,0,5.7.21,8.02.9l-4.03,1.46c-3.2,1.25-3.45,3.27-3.45,3.27-1.46,5.03-3.18,41.25-3.18,41.25,0,3.75-2.2,3.24-2.2,3.24l-64.98,2.27v-.74l-56.9,2.5c-7.35,2.78-7.09,20.37-7.09,20.37h2.43c2.46-.25,5.4,0,5.4,0l120.14,13.07c3.43.25,4.66,4.03,4.66,4.03l1.46,7.3c8.6,37.73,10.57,54.83,10.57,54.83l.02.51-41.23,5.03c-3.17.25-3.92.76-3.92.76-2.71,1.74-1.97,12.31-1.97,12.31l47.33,2.27h.51c.23,4.8,1.46,17.85,1.46,17.85,0,0,1.2-13.05,1.46-17.85h.09l47.32-2.27s.74-10.57-1.97-12.31c0,0-.74-.51-3.92-.76l-40.81-4.96.02-.58s1.95-17.1,10.55-54.83l1.46-7.3s1.25-3.78,4.66-4.03l120.17-13.07s2.94-.25,5.38,0h2.46s.25-17.59-7.11-20.37ZM760.5,867.35c-1.76,0-4.26-15.94-4.26-15.94v-4.64c0-1.53,1.25-.25,1.25-.25.74.51,3.01,3.59,3.01,3.59v.16s.23,13.47.23,15.53-.23,1.55-.23,1.55ZM760.55,832.4c-.12,3.71.02,8.3.02,8.3-.26,2.53-.97,2.27-.97,2.27-1.58,0-2.32-1.71-2.66-3.15-.25-1.02-.28-1.88-.28-1.88v-16.11c0,1.25,2.46,3.52,2.46,3.52,1.69,1.25,1.69,3.52,1.69,3.52,0,1.51-.21,2.11-.25,3.52ZM779.34,832.4c-.05-1.41-.25-2.02-.25-3.52,0,0,0-2.27,1.71-3.52,0,0,2.46-2.27,2.46-3.52v16.11s-.05.86-.28,1.88c-.37,1.44-1.09,3.15-2.67,3.15,0,0-.74.25-1-2.27,0,0,.14-4.59.02-8.3ZM783.66,851.4s-2.5,15.94-4.27,15.94c0,0-.23.51-.23-1.55s.23-15.53.23-15.53v-.16s2.27-3.08,3.01-3.59c0,0,1.25-1.27,1.25.25v4.64ZM784.84,816.43l-2.41.37s-2.09.7-4.52-1.09c-2.36-1.71-5.86-1.83-7.32-1.78-.32,0-.56.02-.65.02h-.02c-.09,0-.3-.02-.63-.02-1.46-.05-4.98.07-7.35,1.78-2.43,1.78-4.52,1.09-4.52,1.09l-2.43-.37s-.69-4.96.35-7.42c1.02-2.43,2.71-8.95,13.97-9.2h1.25c11.24.25,12.91,6.77,13.95,9.2,1.04,2.46.32,7.42.32,7.42Z"/>
+          <path class="cls-1" d="M783.66,846.77v4.64s-2.5,15.94-4.27,15.94c0,0-.23.51-.23-1.55s.23-15.53.23-15.53v-.16s2.27-3.08,3.01-3.59c0,0,1.25-1.27,1.25.25Z"/>
+          <path class="cls-1" d="M760.73,865.79c0,2.06-.23,1.55-.23,1.55-1.76,0-4.26-15.94-4.26-15.94v-4.64c0-1.53,1.25-.25,1.25-.25.74.51,3.01,3.59,3.01,3.59v.16s.23,13.47.23,15.53Z"/>
+          <path class="cls-1" d="M783.26,821.83v16.11s-.05.86-.28,1.88c-.37,1.44-1.09,3.15-2.67,3.15,0,0-.74.25-1-2.27,0,0,.14-4.59.02-8.3-.05-1.41-.25-2.02-.25-3.52,0,0,0-2.27,1.71-3.52,0,0,2.46-2.27,2.46-3.52Z"/>
+          <path class="cls-1" d="M760.57,840.69c-.26,2.53-.97,2.27-.97,2.27-1.58,0-2.32-1.71-2.66-3.15-.25-1.02-.28-1.88-.28-1.88v-16.11c0,1.25,2.46,3.52,2.46,3.52,1.69,1.25,1.69,3.52,1.69,3.52,0,1.51-.21,2.11-.25,3.52-.12,3.71.02,8.3.02,8.3Z"/>
+          <path class="cls-1" d="M784.84,816.43l-2.41.37s-2.09.7-4.52-1.09c-2.36-1.71-5.86-1.83-7.32-1.78-.32,0-.56.02-.65.02h-.02c-.09,0-.3-.02-.63-.02-1.46-.05-4.98.07-7.35,1.78-2.43,1.78-4.52,1.09-4.52,1.09l-2.43-.37s-.69-4.96.35-7.42c1.02-2.43,2.71-8.95,13.97-9.2h1.25c11.24.25,12.91,6.77,13.95,9.2,1.04,2.46.32,7.42.32,7.42Z"/>
+          <rect class="cls-2" x="758.68" y="287.79" width="23.44" height="119.33"/>
+          <path class="cls-2" d="M376.43,454.66l-38.7,118.91h23.31l6.37-20.68h45.28l7.09,20.68h22.97l-40.47-118.91h-25.86ZM373.57,532.92l16.05-52.59h.36l15.87,52.59h-32.28Z"/>
+          <polygon class="cls-2" points="480.28 542.78 479.73 542.72 453.12 454.66 428.74 454.66 465.43 573.56 491.68 573.56 528.21 454.66 506.84 454.66 480.28 542.78"/>
+          <rect class="cls-2" x="539.85" y="454.66" width="23.36" height="118.91"/>
+          <path class="cls-2" d="M656.91,573.56h22.97l-40.47-118.91h-25.86l-38.7,118.91h23.31l6.37-20.68h45.28l7.09,20.68ZM610.69,532.92l16.05-52.59h.36l15.87,52.59h-32.28Z"/>
+          <polygon class="cls-2" points="714.68 573.56 714.68 474.8 747.49 474.8 747.49 454.66 658.51 454.66 658.51 474.8 691.32 474.8 691.32 573.56 714.68 573.56"/>
+          <rect class="cls-2" x="758.72" y="454.66" width="23.36" height="118.91"/>
+          <path class="cls-2" d="M886.31,498.33c0-15.21-4.01-26.89-12.04-35.03-8.02-8.14-19.59-12.21-34.68-12.21s-26.51,4.07-34.59,12.21c-8.09,8.14-12.13,19.82-12.13,35.03v27.99c0,15.21,4.04,26.89,12.13,35.03,8.08,8.14,19.62,12.21,34.59,12.21s26.66-4.07,34.68-12.21c8.02-8.14,12.04-19.82,12.04-35.03v-27.99ZM862.95,526.14c0,18.18-7.79,27.28-23.36,27.28s-23.36-9.09-23.36-27.28v-27.63c0-18.18,7.78-27.28,23.36-27.28s23.36,9.09,23.36,27.28v27.63Z"/>
+          <polygon class="cls-2" points="962.99 454.66 962.99 529.89 962.63 529.89 918.89 454.66 897.01 454.66 897.01 573.56 919.48 573.56 919.48 495.66 919.83 495.66 965.13 573.56 985.46 573.56 985.46 454.66 962.99 454.66"/>
+        </svg>
+      </a>
+      <a href="tel:+18014770418" id="lp-phone" class="font-heading">
+        (801) 477-0418
+      </a>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="relative h-[95vh] md:h-screen min-h-[700px] flex items-center overflow-hidden">
+    <div
+      class="hero-bg absolute inset-0 w-full h-full opacity-0"
+      style="background-image: url('https://pub-b9b491aee0b94c2c8e6c5d1dde4848db.r2.dev/public/images/hero/Airplane%20Over%20Lake.avif'); background-size: cover; background-repeat: no-repeat; background-position: center 30%;"
+    ></div>
+    <div class="absolute inset-0 bg-black/25"></div>
+
+    <div class="relative z-10 max-w-[1200px] w-full px-8 mx-auto">
+      <div class="relative w-full max-w-[800px] text-left">
+
+        <div class="inline-flex items-center gap-2.5 mb-6 pt-20 md:pt-0 font-heading text-base font-normal leading-6 tracking-[0.1em] text-white/95">
+          <span class="w-14 h-0.5 bg-white/80 rounded-sm"></span>
+          Spanish Fork Flight School
+        </div>
+
+        <h1 class="font-heading text-5xl md:text-7xl font-medium leading-[1.2] mb-7 text-white tracking-tight max-w-[900px]">
+          Book Your $149<br />Discovery Flight
+        </h1>
+
+        <p class="font-heading text-base leading-6 text-white/90 mb-10 max-w-[580px] font-normal">
+          Take the controls of a modern Diamond DA40 with an experienced instructor. No experience needed — just show up and fly.
+        </p>
+
+        <div class="flex gap-4 flex-wrap mb-12">
+          <a href="#book" class="cta-button font-heading font-normal">Book My Discovery Flight</a>
+          <a href="tel:+18014770418" class="secondary-button font-heading font-normal">Call: (801) 477-0418</a>
+        </div>
+
+        <div class="flex flex-col gap-1 pl-4 py-2 border-l-[3px] border-white/80">
+          <div class="text-white text-lg tracking-[0.125rem] leading-none pb-2">★★★★★</div>
+          <div class="text-sm text-white/95 font-normal leading-none font-heading">
+            100+ Five-Star Reviews &middot; Modern Diamond Fleet &middot; FAA Certified
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT TO EXPECT ===================== -->
+  <section class="py-20 bg-white">
+    <div class="max-w-[1200px] mx-auto px-8">
+      <h2 class="text-center text-[36px] lg:text-[52px] font-medium font-heading mb-6 text-gray-800">
+        What to Expect on Your Discovery Flight
+      </h2>
+      <p class="text-center max-w-[700px] mx-auto mb-12 text-lg text-gray-600 font-heading">
+        From pre-flight briefing to landing, every minute is designed to give you a real feel for flying.
+      </p>
+
+      <div class="rounded-xl overflow-hidden shadow-md mb-10">
+        <img
+          src="/images/cockpit-in-flight.png"
+          alt="Pilot in the cockpit of a Diamond DA40 flying over Utah Valley with Garmin G1000 glass cockpit"
+          class="w-full h-auto brightness-150"
+          loading="lazy"
+        />
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-10 h-10 rounded-lg bg-gray-900 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-900 font-heading">Pre-Flight Briefing</h3>
+          <p class="text-gray-600 font-heading">Your instructor walks you through the aircraft, instruments, and what you'll do in the air.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-10 h-10 rounded-lg bg-gray-900 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="3" />
+              <path stroke-linecap="round" d="M12 3v6M5.6 7.8l4.2 3M18.4 7.8l-4.2 3" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-900 font-heading">You Fly the Plane</h3>
+          <p class="text-gray-600 font-heading">Take the controls yourself. You'll handle takeoff, turns, and flight over Utah Valley.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-10 h-10 rounded-lg bg-gray-900 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 18l5-9 4 7 3-5 6 7H3z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-900 font-heading">30-Minute Flight</h3>
+          <p class="text-gray-600 font-heading">Fly over Utah Lake, the Wasatch Mountains, and Spanish Fork from the cockpit of a Diamond DA40.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div class="w-10 h-10 rounded-lg bg-gray-900 flex items-center justify-center mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2 text-gray-900 font-heading">No Experience Required</h3>
+          <p class="text-gray-600 font-heading">Never been in a small plane? Perfect. This flight is designed for complete beginners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHO YOU'LL FLY WITH ===================== -->
+  <section class="py-24 bg-white border-t border-gray-100">
+    <div class="max-w-[1200px] mx-auto px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="order-2 lg:order-1">
+          <img
+            src="https://pub-b9b491aee0b94c2c8e6c5d1dde4848db.r2.dev/public/images/people/Centerline%20Team%20Photo.avif"
+            alt="Centerline Aviation founders Nate and Cole with the team"
+            class="rounded-xl shadow-lg w-full object-cover aspect-[4/3] lg:aspect-auto h-auto"
+            loading="lazy"
+          />
+        </div>
+        <div class="order-1 lg:order-2">
+          <p class="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-4 font-heading">
+            FOUNDED BY PILOTS, BUILT FOR YOU
+          </p>
+          <h2 class="text-[36px] lg:text-[52px] font-medium font-heading mb-6 text-gray-800 leading-tight">
+            Two Friends. One Mission.
+          </h2>
+          <div class="space-y-6 text-lg text-gray-600 font-heading font-light leading-relaxed">
+            <p>Centerline was founded by Nate and Cole — a corporate pilot and an airline captain who started just like you, figuring it out one step at a time.</p>
+            <p>They built Centerline to be the school they wished they had. No contracts. No pressure. No massive student loans. Just real training that fits into your life.</p>
+            <p>Whether you're here for a single discovery flight or the start of a flying career, you'll feel the difference from the moment you walk into the hangar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== YOUR AIRCRAFT ===================== -->
+  <section class="py-24 bg-white">
+    <div class="max-w-[1200px] mx-auto px-8">
+      <div class="max-w-[1000px] mx-auto">
+        <div class="rounded-2xl overflow-hidden shadow-2xl mb-12">
+          <img
+            src="https://pub-b9b491aee0b94c2c8e6c5d1dde4848db.r2.dev/public/images/aircraft/DA40%20in%20Hangar.avif"
+            alt="Diamond DA40 aircraft inside the Centerline hangar"
+            class="w-full h-auto aspect-video object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl font-semibold mb-4 text-gray-900 font-heading leading-tight">
+            Your Ride: The Diamond DA40
+          </h2>
+          <p class="text-lg text-gray-600 font-heading font-light leading-relaxed">
+            Your discovery flight is in a Diamond DA40 — the same modern aircraft used by top university flight programs. Low-wing design for better visibility, a Garmin G1000 glass cockpit, and one of the best safety records in general aviation. This is not a beat-up 1970s Cessna.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="bg-gray-50 py-24">
+    <div class="max-w-[1200px] mx-auto px-8">
+      <h2 class="text-center text-[36px] lg:text-[52px] font-medium font-heading mb-6 text-gray-800 leading-tight">
+        What Discovery Flight Students Say
+      </h2>
+      <p class="text-center max-w-[700px] mx-auto mb-16 text-lg text-gray-600 font-heading">
+        Real reviews from real students who took their first flight with us.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Review 1 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+          <div class="text-lg tracking-[0.125rem] text-yellow-400 mb-4">★★★★★</div>
+          <p class="italic mb-6 text-gray-800 font-heading leading-relaxed flex-grow">
+            "I did a Discovery Flight with Cole Barton from Centerline Aviation. He made sure I understood each part of the plane... They let me do all of the flying with assistance. Fantastic discovery flight and cheaper than most places I've seen. 5 stars!!!"
+          </p>
+          <div class="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white font-semibold text-base flex-shrink-0 font-heading">JL</div>
+            <div>
+              <div class="font-semibold text-gray-900 font-heading">Jordan London</div>
+              <div class="text-sm text-gray-500 font-heading">Discovery Flight Student</div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 2 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+          <div class="text-lg tracking-[0.125rem] text-yellow-400 mb-4">★★★★★</div>
+          <p class="italic mb-6 text-gray-800 font-heading leading-relaxed flex-grow">
+            "Thank You so much for the memorable experience today! Had a discovery flight and it far exceeded our expectations!"
+          </p>
+          <div class="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white font-semibold text-base flex-shrink-0 font-heading">KM</div>
+            <div>
+              <div class="font-semibold text-gray-900 font-heading">Ken Martin</div>
+              <div class="text-sm text-gray-500 font-heading">Discovery Flight Student</div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 3 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+          <div class="text-lg tracking-[0.125rem] text-yellow-400 mb-4">★★★★★</div>
+          <p class="italic mb-6 text-gray-800 font-heading leading-relaxed flex-grow">
+            "I did an introductory flight with Centerline Aviation. They were easy to work with and incredibly helpful. I did my flight with Cole who was generous in offering up his insights &amp; knowledge of flying."
+          </p>
+          <div class="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white font-semibold text-base flex-shrink-0 font-heading">KR</div>
+            <div>
+              <div class="font-semibold text-gray-900 font-heading">Kendall Rupp</div>
+              <div class="text-sm text-gray-500 font-heading">Discovery Flight Student</div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 4 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+          <div class="text-lg tracking-[0.125rem] text-yellow-400 mb-4">★★★★★</div>
+          <p class="italic mb-6 text-gray-800 font-heading leading-relaxed flex-grow">
+            "I've had 2 different instructors at Centerline, both have been awesome. The planes are in really good shape and Spanish Fork airport is a great place to learn at. Would recommend."
+          </p>
+          <div class="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white font-semibold text-base flex-shrink-0 font-heading">SF</div>
+            <div>
+              <div class="font-semibold text-gray-900 font-heading">Samuel Fleming</div>
+              <div class="text-sm text-gray-500 font-heading">Student Pilot</div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 5 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+          <div class="text-lg tracking-[0.125rem] text-yellow-400 mb-4">★★★★★</div>
+          <p class="italic mb-6 text-gray-800 font-heading leading-relaxed flex-grow">
+            "We thoroughly enjoyed our discovery flight. Braken is a very professional and personable instructor."
+          </p>
+          <div class="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white font-semibold text-base flex-shrink-0 font-heading">GM</div>
+            <div>
+              <div class="font-semibold text-gray-900 font-heading">Geniel McDonald</div>
+              <div class="text-sm text-gray-500 font-heading">Discovery Flight Student</div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 6 -->
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col">
+          <div class="text-lg tracking-[0.125rem] text-yellow-400 mb-4">★★★★★</div>
+          <p class="italic mb-6 text-gray-800 font-heading leading-relaxed flex-grow">
+            "My son and I had a great introductory flight with Nate. He explained everything very well. Plane was in good shape."
+          </p>
+          <div class="flex items-center gap-4 mt-auto pt-6 border-t border-gray-50">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white font-semibold text-base flex-shrink-0 font-heading">BM</div>
+            <div>
+              <div class="font-semibold text-gray-900 font-heading">Ben McMillan</div>
+              <div class="text-sm text-gray-500 font-heading">Introductory Flight Student</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Post-testimonial CTA -->
+      <div class="text-center mt-14">
+        <a href="#book" class="cta-button-dark font-heading font-normal">Book My Discovery Flight</a>
+        <p class="mt-5 text-sm text-gray-500 font-heading">
+          or call <a href="tel:+18014770418" class="text-gray-700 font-medium hover:underline">(801) 477-0418</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BOOKING FORM ===================== -->
+  <section id="book" class="pt-32 pb-20 bg-black">
+    <div class="max-w-[1200px] mx-auto w-full px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+
+        <!-- Left: Info -->
+        <div class="flex flex-col justify-center">
+          <h2 class="text-[42px] lg:text-[62px] font-medium text-white mb-6 font-heading leading-tight">
+            Reserve Your Discovery Flight
+          </h2>
+          <p class="text-lg text-white/80 mb-8 font-heading font-light leading-relaxed">
+            Fill out the form and we'll confirm your $149 flight within 24 hours. No credit card required to reserve.
+          </p>
+          <div class="w-full h-px bg-white/20 mb-8"></div>
+          <ul class="space-y-6">
+            <li class="border-b border-white/10 pb-6">
+              <h3 class="text-base font-semibold mb-1 text-white font-heading">Experienced Instructors</h3>
+              <p class="text-white/60 font-heading text-sm">Learn from active airline and corporate pilots who fly professionally every week.</p>
+            </li>
+            <li class="border-b border-white/10 pb-6">
+              <h3 class="text-base font-semibold mb-1 text-white font-heading">Flexible Scheduling</h3>
+              <p class="text-white/60 font-heading text-sm">Morning, evening, and weekend availability. Fly when it works for you.</p>
+            </li>
+            <li class="pb-6">
+              <h3 class="text-base font-semibold mb-1 text-white font-heading">Pay-As-You-Go</h3>
+              <p class="text-white/60 font-heading text-sm">No large upfront payments. Start with a $149 discovery flight and go from there.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="flex flex-col items-start">
+          <p class="flex items-center gap-2 text-sm text-white/50 font-heading mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" /><path stroke-linecap="round" d="M16 2v4M8 2v4M3 10h18" />
+            </svg>
+            Weekend slots fill up fast. Reserve your spot today.
+          </p>
+          <div class="w-full rounded-2xl shadow-xl p-8 md:p-12" style="background: linear-gradient(to bottom, rgba(46,46,46,0.35) 0%, rgba(46,46,46,0.5) 100%);">
+
+            <form id="discovery-form" novalidate class="space-y-6">
+              <!-- Honeypot -->
+              <div style="position:absolute;left:-9999px;width:1px;height:1px;" aria-hidden="true">
+                <input type="text" id="df-honeypot" name="honeypot" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <!-- Name row -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="df-firstName" class="form-label">First Name *</label>
+                  <input type="text" id="df-firstName" name="firstName" required placeholder="Jane" autocomplete="given-name" class="form-input" />
+                </div>
+                <div>
+                  <label for="df-lastName" class="form-label">Last Name *</label>
+                  <input type="text" id="df-lastName" name="lastName" required placeholder="Smith" autocomplete="family-name" class="form-input" />
+                </div>
+              </div>
+
+              <!-- Email + Phone row -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="df-email" class="form-label">Email *</label>
+                  <input type="email" id="df-email" name="email" required placeholder="jane@example.com" autocomplete="email" class="form-input" />
+                </div>
+                <div>
+                  <label for="df-phone" class="form-label">Phone *</label>
+                  <input type="tel" id="df-phone" name="phone" required placeholder="(801) 555-1234" autocomplete="tel" class="form-input" />
+                </div>
+              </div>
+
+              <!-- Date -->
+              <div>
+                <label for="df-date" class="form-label">
+                  Preferred Flight Date <span style="color:rgba(255,255,255,0.5);font-weight:400;">(optional)</span>
+                </label>
+                <input type="date" id="df-date" name="preferredDate" class="form-input" />
+              </div>
+
+              <!-- Error message -->
+              <div id="form-error" style="display:none;" class="p-4 rounded-lg" style="background:rgba(127,29,29,0.3);border:1px solid rgba(239,68,68,0.5);">
+                <p style="color:#fca5a5;font-size:0.875rem;font-family:'Manrope',sans-serif;">
+                  Something went wrong. Please try again or call us at
+                  <a href="tel:+18014770418" style="font-weight:600;text-decoration:underline;">(801) 477-0418</a>.
+                </p>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" id="form-submit" class="cta-button font-heading">
+                <span id="submit-label" class="flex-1 text-center">Book My Discovery Flight — $149</span>
+              </button>
+
+              <div class="text-center">
+                <p class="font-heading" style="color:rgba(255,255,255,0.6);font-size:0.875rem;">
+                  Or call us directly:
+                  <a href="tel:+18014770418" class="font-medium hover:underline" style="color:white;">(801) 477-0418</a>
+                </p>
+              </div>
+
+              <div class="flex flex-wrap justify-center gap-x-5 gap-y-1 font-heading pt-1" style="font-size:0.75rem;color:rgba(255,255,255,0.5);">
+                <span>&#10003; No credit card required</span>
+                <span>&#10003; Cancel anytime</span>
+                <span>&#10003; Confirmation within 24 hours</span>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA BAND ===================== -->
+  <section class="relative py-32 text-center overflow-hidden">
+    <div
+      class="absolute inset-0 z-0"
+      style="background-image: url('https://pub-b9b491aee0b94c2c8e6c5d1dde4848db.r2.dev/public/images/aircraft/airplane%20flying%20over%20sunset%20reflective%20lake.avif'); background-size: cover; background-position: center;"
+    ></div>
+    <div class="absolute inset-0 bg-black/70 z-0"></div>
+    <div class="relative z-10 max-w-[1200px] mx-auto px-8">
+      <h2 class="text-[36px] lg:text-[52px] font-medium mb-6 text-white font-heading">Your First Flight Is Waiting</h2>
+      <p class="text-xl mb-10 text-white/90 font-heading max-w-[600px] mx-auto">
+        Spots fill up fast. Reserve your $149 discovery flight today.
+      </p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="#book" class="cta-button font-heading font-normal">Book My Discovery Flight</a>
+        <a href="tel:+18014770418" class="secondary-button font-heading font-normal">(801) 477-0418</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-black text-white py-16 pb-32 md:pb-16">
+    <div class="max-w-[1200px] mx-auto px-8">
+      <div class="flex flex-col md:flex-row justify-between gap-12">
+        <div class="md:max-w-[350px]">
+          <div class="flex items-center gap-3 mb-6">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1031.17" class="h-12 w-auto" role="img" aria-label="Centerline Aviation">
+              <defs><style>.cls-1{fill:none}.cls-2{fill:#fff}</style></defs>
+              <path class="cls-2" d="M61.23,386.9c-15.5,0-23.26-9.12-23.26-27.37v-27.73c0-18.25,7.57-27.37,22.72-27.37,11.57,0,19.26,6.38,23.08,19.14l20.57-7.87c-2.74-10.13-7.9-17.92-15.48-23.35-7.57-5.43-17.2-8.14-28.89-8.14-14.43,0-25.61,4.09-33.54,12.26-7.93,8.17-11.9,19.89-11.9,35.15v28.09c0,15.27,4,26.99,11.99,35.16,7.99,8.17,19.32,12.26,33.99,12.26,11.93,0,21.74-2.71,29.43-8.14,7.69-5.42,12.91-13.21,15.65-23.34l-20.57-7.69c-3.94,12.64-11.87,18.96-23.8,18.96Z"/>
+              <polygon class="cls-2" points="125.26 407.12 207.56 407.12 207.56 386.9 148.69 386.9 148.69 356.85 197 356.85 197 336.63 148.69 336.63 148.69 308.01 207.56 308.01 207.56 287.79 125.26 287.79 125.26 407.12"/>
+              <polygon class="cls-2" points="293.41 363.29 293.05 363.29 249.17 287.79 227.21 287.79 227.21 407.12 249.76 407.12 249.76 328.94 250.11 328.94 295.56 407.12 315.95 407.12 315.95 287.79 293.41 287.79 293.41 363.29"/>
+              <polygon class="cls-2" points="335.33 308.01 368.25 308.01 368.25 407.12 391.69 407.12 391.69 308.01 424.61 308.01 424.61 287.79 335.33 287.79 335.33 308.01"/>
+              <polygon class="cls-2" points="444.27 407.12 526.56 407.12 526.56 386.9 467.7 386.9 467.7 356.85 516.01 356.85 516.01 336.63 467.7 336.63 467.7 308.01 526.56 308.01 526.56 287.79 444.27 287.79 444.27 407.12"/>
+              <path class="cls-2" d="M633.35,324.82c0-12.52-3.55-21.83-10.64-27.91-7.1-6.08-17.92-9.12-32.47-9.12h-44.01v119.33h23.44v-45.44h17.94l23.21,45.44h26.48l-26.3-48.13c14.91-4.77,22.36-16.16,22.36-34.17ZM604.73,337.44c-3.22,2.68-8.17,4.03-14.85,4.03h-20.21v-33.45h20.21c13.12,0,19.68,5.61,19.68,16.82,0,5.72-1.61,9.93-4.83,12.61Z"/>
+              <polygon class="cls-2" points="680.59 287.79 655.95 287.79 655.95 407.12 739.99 407.12 739.99 386.9 680.59 386.9 680.59 287.79"/>
+              <polygon class="cls-2" points="863.22 363.29 862.88 363.29 820.67 287.79 799.55 287.79 799.55 407.12 821.23 407.12 821.23 328.94 821.58 328.94 865.28 407.12 884.08 407.12 884.08 287.79 863.22 287.79 863.22 363.29"/>
+              <polygon class="cls-2" points="985.46 308.01 985.46 287.79 901.54 287.79 901.54 407.12 985.46 407.12 985.46 386.9 925.44 386.9 925.44 356.85 974.7 356.85 974.7 336.63 925.44 336.63 925.44 308.01 985.46 308.01"/>
+              <rect class="cls-2" x="758.68" y="121.13" width="23.44" height="119.33"/>
+              <rect class="cls-2" x="758.68" y="621.1" width="23.44" height="119.33"/>
+              <polygon class="cls-2" points="680.91 39.95 770.37 39.95 859.82 39.95 859.82 269.34 884.79 269.34 884.79 14.99 770.37 14.99 655.95 14.99 655.95 269.34 680.91 269.34 680.91 39.95"/>
+              <polygon class="cls-2" points="859.82 991.21 768.56 991.21 767.58 991.21 680.91 991.21 680.91 856.85 655.95 854.12 655.95 1016.18 884.79 1016.18 884.79 853.62 859.82 856.35 859.82 991.21"/>
+              <polygon class="cls-2" points="655.95 814.45 680.91 813.58 680.91 593.87 655.95 593.87 655.95 814.45"/>
+              <polygon class="cls-2" points="859.82 813.74 884.79 814.62 884.79 593.87 859.82 593.87 859.82 813.74"/>
+              <path class="cls-2" d="M909.68,822.92l-56.87-2.5v.74l-64.98-2.27s-2.2.51-2.2-3.24c0,0-1.71-36.22-3.17-41.25,0,0-.26-2.02-3.45-3.27l-4.03-1.46c3.38-.81,9.13-.81,9.13-.81,0,0,10.59-.76,10.59-1.27s-6.4-.74-6.4-.74l-14.42-.25c-1.14-3.43-2.97-8.53-3.94-8.53s-2.87,5.24-4.01,8.67c-3.08-.14-14.92-.63-19.58.05,0,0-2.94,0,0,.49,2.94.51,6.61,1.51,10.54,1.51,0,0,5.7.21,8.02.9l-4.03,1.46c-3.2,1.25-3.45,3.27-3.45,3.27-1.46,5.03-3.18,41.25-3.18,41.25,0,3.75-2.2,3.24-2.2,3.24l-64.98,2.27v-.74l-56.9,2.5c-7.35,2.78-7.09,20.37-7.09,20.37h2.43c2.46-.25,5.4,0,5.4,0l120.14,13.07c3.43.25,4.66,4.03,4.66,4.03l1.46,7.3c8.6,37.73,10.57,54.83,10.57,54.83l.02.51-41.23,5.03c-3.17.25-3.92.76-3.92.76-2.71,1.74-1.97,12.31-1.97,12.31l47.33,2.27h.51c.23,4.8,1.46,17.85,1.46,17.85,0,0,1.2-13.05,1.46-17.85h.09l47.32-2.27s.74-10.57-1.97-12.31c0,0-.74-.51-3.92-.76l-40.81-4.96.02-.58s1.95-17.1,10.55-54.83l1.46-7.3s1.25-3.78,4.66-4.03l120.17-13.07s2.94-.25,5.38,0h2.46s.25-17.59-7.11-20.37ZM760.5,867.35c-1.76,0-4.26-15.94-4.26-15.94v-4.64c0-1.53,1.25-.25,1.25-.25.74.51,3.01,3.59,3.01,3.59v.16s.23,13.47.23,15.53-.23,1.55-.23,1.55ZM760.55,832.4c-.12,3.71.02,8.3.02,8.3-.26,2.53-.97,2.27-.97,2.27-1.58,0-2.32-1.71-2.66-3.15-.25-1.02-.28-1.88-.28-1.88v-16.11c0,1.25,2.46,3.52,2.46,3.52,1.69,1.25,1.69,3.52,1.69,3.52,0,1.51-.21,2.11-.25,3.52ZM779.34,832.4c-.05-1.41-.25-2.02-.25-3.52,0,0,0-2.27,1.71-3.52,0,0,2.46-2.27,2.46-3.52v16.11s-.05.86-.28,1.88c-.37,1.44-1.09,3.15-2.67,3.15,0,0-.74.25-1-2.27,0,0,.14-4.59.02-8.3ZM783.66,851.4s-2.5,15.94-4.27,15.94c0,0-.23.51-.23-1.55s.23-15.53.23-15.53v-.16s2.27-3.08,3.01-3.59c0,0,1.25-1.27,1.25.25v4.64ZM784.84,816.43l-2.41.37s-2.09.7-4.52-1.09c-2.36-1.71-5.86-1.83-7.32-1.78-.32,0-.56.02-.65.02h-.02c-.09,0-.3-.02-.63-.02-1.46-.05-4.98.07-7.35,1.78-2.43,1.78-4.52,1.09-4.52,1.09l-2.43-.37s-.69-4.96.35-7.42c1.02-2.43,2.71-8.95,13.97-9.2h1.25c11.24.25,12.91,6.77,13.95,9.2,1.04,2.46.32,7.42.32,7.42Z"/>
+              <path class="cls-1" d="M783.66,846.77v4.64s-2.5,15.94-4.27,15.94c0,0-.23.51-.23-1.55s.23-15.53.23-15.53v-.16s2.27-3.08,3.01-3.59c0,0,1.25-1.27,1.25.25Z"/>
+              <path class="cls-1" d="M760.73,865.79c0,2.06-.23,1.55-.23,1.55-1.76,0-4.26-15.94-4.26-15.94v-4.64c0-1.53,1.25-.25,1.25-.25.74.51,3.01,3.59,3.01,3.59v.16s.23,13.47.23,15.53Z"/>
+              <path class="cls-1" d="M783.26,821.83v16.11s-.05.86-.28,1.88c-.37,1.44-1.09,3.15-2.67,3.15,0,0-.74.25-1-2.27,0,0,.14-4.59.02-8.3-.05-1.41-.25-2.02-.25-3.52,0,0,0-2.27,1.71-3.52,0,0,2.46-2.27,2.46-3.52Z"/>
+              <path class="cls-1" d="M760.57,840.69c-.26,2.53-.97,2.27-.97,2.27-1.58,0-2.32-1.71-2.66-3.15-.25-1.02-.28-1.88-.28-1.88v-16.11c0,1.25,2.46,3.52,2.46,3.52,1.69,1.25,1.69,3.52,1.69,3.52,0,1.51-.21,2.11-.25,3.52-.12,3.71.02,8.3.02,8.3Z"/>
+              <path class="cls-1" d="M784.84,816.43l-2.41.37s-2.09.7-4.52-1.09c-2.36-1.71-5.86-1.83-7.32-1.78-.32,0-.56.02-.65.02h-.02c-.09,0-.3-.02-.63-.02-1.46-.05-4.98.07-7.35,1.78-2.43,1.78-4.52,1.09-4.52,1.09l-2.43-.37s-.69-4.96.35-7.42c1.02-2.43,2.71-8.95,13.97-9.2h1.25c11.24.25,12.91,6.77,13.95,9.2,1.04,2.46.32,7.42.32,7.42Z"/>
+              <rect class="cls-2" x="758.68" y="287.79" width="23.44" height="119.33"/>
+              <path class="cls-2" d="M376.43,454.66l-38.7,118.91h23.31l6.37-20.68h45.28l7.09,20.68h22.97l-40.47-118.91h-25.86ZM373.57,532.92l16.05-52.59h.36l15.87,52.59h-32.28Z"/>
+              <polygon class="cls-2" points="480.28 542.78 479.73 542.72 453.12 454.66 428.74 454.66 465.43 573.56 491.68 573.56 528.21 454.66 506.84 454.66 480.28 542.78"/>
+              <rect class="cls-2" x="539.85" y="454.66" width="23.36" height="118.91"/>
+              <path class="cls-2" d="M656.91,573.56h22.97l-40.47-118.91h-25.86l-38.7,118.91h23.31l6.37-20.68h45.28l7.09,20.68ZM610.69,532.92l16.05-52.59h.36l15.87,52.59h-32.28Z"/>
+              <polygon class="cls-2" points="714.68 573.56 714.68 474.8 747.49 474.8 747.49 454.66 658.51 454.66 658.51 474.8 691.32 474.8 691.32 573.56 714.68 573.56"/>
+              <rect class="cls-2" x="758.72" y="454.66" width="23.36" height="118.91"/>
+              <path class="cls-2" d="M886.31,498.33c0-15.21-4.01-26.89-12.04-35.03-8.02-8.14-19.59-12.21-34.68-12.21s-26.51,4.07-34.59,12.21c-8.09,8.14-12.13,19.82-12.13,35.03v27.99c0,15.21,4.04,26.89,12.13,35.03,8.08,8.14,19.62,12.21,34.59,12.21s26.66-4.07,34.68-12.21c8.02-8.14,12.04-19.82,12.04-35.03v-27.99ZM862.95,526.14c0,18.18-7.79,27.28-23.36,27.28s-23.36-9.09-23.36-27.28v-27.63c0-18.18,7.78-27.28,23.36-27.28s23.36,9.09,23.36,27.28v27.63Z"/>
+              <polygon class="cls-2" points="962.99 454.66 962.99 529.89 962.63 529.89 918.89 454.66 897.01 454.66 897.01 573.56 919.48 573.56 919.48 495.66 919.83 495.66 965.13 573.56 985.46 573.56 985.46 454.66 962.99 454.66"/>
+            </svg>
+          </div>
+          <p class="text-gray-400 leading-relaxed mb-6 font-heading">
+            Professional flight training in Spanish Fork, Utah. Modern Diamond fleet, flexible scheduling, and pay-as-you-go pricing from $149.
+          </p>
+          <p class="text-gray-500 text-sm font-heading">Hangar #122 &bull; Spanish Fork Airport (SPK)</p>
+        </div>
+        <div>
+          <h4 class="text-base font-medium mb-6 text-gray-300 font-heading">Contact</h4>
+          <ul class="space-y-3">
+            <li><a href="tel:+18014770418" class="text-gray-400 hover:text-white transition-colors font-heading">(801) 477-0418</a></li>
+            <li><a href="mailto:contact@centerlineaviationinc.com" class="text-gray-400 hover:text-white transition-colors font-heading">Email Us</a></li>
+            <li class="text-gray-500 text-sm pt-2 font-heading">Mon–Fri: 8am–5pm<br />Sat: 8am–3pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-gray-500 text-sm font-heading">&copy; 2025 Centerline Aviation INC. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="/privacy-policy" class="text-gray-500 hover:text-white text-sm transition-colors font-heading">Privacy Policy</a>
+            <a href="/terms-of-service" class="text-gray-500 hover:text-white text-sm transition-colors font-heading">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== STICKY MOBILE CTA BAR ===================== -->
+  <div
+    id="mobile-cta-bar"
+    class="fixed bottom-0 left-0 right-0 bg-gray-900 border-t z-[999] px-4 py-3 flex gap-3 items-center justify-between"
+    style="border-color:rgba(255,255,255,0.1);box-shadow:0 -4px 20px rgba(0,0,0,0.5);"
+  >
+    <a href="#book" class="flex-1 bg-white text-gray-900 font-heading font-semibold text-sm py-3 px-4 rounded-full text-center" style="min-height:48px;display:flex;align-items:center;justify-content:center;">
+      Book My Discovery Flight
+    </a>
+    <a href="tel:+18014770418" class="flex-shrink-0 text-white p-3 rounded-full flex items-center justify-center" style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);min-width:48px;min-height:48px;" aria-label="Call Centerline Aviation">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script>
+    // --- Navbar scroll ---
+    (function () {
+      var header = document.getElementById('lp-header');
+      function onScroll() { header.classList.toggle('lp-scrolled', window.scrollY > 50); }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    // --- Mobile CTA bar ---
+    (function () {
+      var bar = document.getElementById('mobile-cta-bar');
+      var hero = document.getElementById('hero');
+      function update() {
+        if (!bar || !hero) return;
+        bar.classList.toggle('bar-visible', hero.getBoundingClientRect().bottom < 0);
+      }
+      window.addEventListener('scroll', update, { passive: true });
+      window.addEventListener('resize', update);
+      update();
+    })();
+
+    // --- Phone number formatting ---
+    document.getElementById('df-phone').addEventListener('input', function () {
+      var digits = this.value.replace(/\D/g, '');
+      if (digits.length <= 3) this.value = digits;
+      else if (digits.length <= 6) this.value = '(' + digits.slice(0, 3) + ') ' + digits.slice(3);
+      else this.value = '(' + digits.slice(0, 3) + ') ' + digits.slice(3, 6) + '-' + digits.slice(6, 10);
+    });
+
+    // --- Set min date on date picker ---
+    document.getElementById('df-date').min = new Date().toISOString().split('T')[0];
+
+    // --- Form submission ---
+    (function () {
+      var WEBHOOK = 'https://services.leadconnectorhq.com/hooks/10LCZDnUvwfyH3005w5r/webhook-trigger/4848fb32-c55a-4923-8645-e31688d687a4';
+      var form = document.getElementById('discovery-form');
+      var submitBtn = document.getElementById('form-submit');
+      var submitLabel = document.getElementById('submit-label');
+      var errorDiv = document.getElementById('form-error');
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        // Honeypot check
+        if (document.getElementById('df-honeypot').value) {
+          setTimeout(function () { window.location.href = '/discovery-flight-thank-you'; }, 800);
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitLabel.textContent = 'Submitting...';
+        errorDiv.style.display = 'none';
+
+        // Collect stored UTM params
+        var utmParams = {};
+        try { utmParams = JSON.parse(localStorage.getItem('utm_params') || '{}'); } catch (e) {}
+
+        var payload = Object.assign({
+          name: (document.getElementById('df-firstName').value + ' ' + document.getElementById('df-lastName').value).trim(),
+          firstName: document.getElementById('df-firstName').value,
+          lastName: document.getElementById('df-lastName').value,
+          email: document.getElementById('df-email').value,
+          phone: document.getElementById('df-phone').value,
+          preferredDate: document.getElementById('df-date').value || null,
+          subject: 'Discovery Flight',
+          source: 'Discovery Flight Landing Page',
+          submittedAt: new Date().toISOString(),
+        }, utmParams);
+
+        try {
+          var res = await fetch(WEBHOOK, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          if (!res.ok) throw new Error('Failed');
+
+          // TODO: Replace CONVERSION_LABEL_HERE with actual label from Google Ads
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', { send_to: 'AW-17843692381/CONVERSION_LABEL_HERE', value: 149.0, currency: 'USD' });
+          }
+
+          window.location.href = '/discovery-flight-thank-you';
+        } catch (err) {
+          errorDiv.style.display = 'block';
+          submitBtn.disabled = false;
+          submitLabel.textContent = 'Book My Discovery Flight — $149';
+        }
+      });
+    })();
+
+    // --- LeadConnector DNI — paid traffic only ---
+    window.addEventListener('load', function () {
+      var stored = localStorage.getItem('utm_params');
+      var isPaid = false;
+      try {
+        var p = JSON.parse(stored || '{}');
+        isPaid = !!(p.utm_source || p.utm_medium || p.utm_campaign || p.gclid || p.fbclid || p.msclkid);
+      } catch (e) {}
+      if (isPaid) {
+        setTimeout(function () {
+          var s1 = document.createElement('script');
+          s1.src = 'https://backend.leadconnectorhq.com/appengine/loc/10LCZDnUvwfyH3005w5r/pool/45veuB8MghSmQSK2MtZQ/number_pool.js';
+          document.body.appendChild(s1);
+          s1.onload = function () {
+            var s2 = document.createElement('script');
+            s2.src = 'https://backend.leadconnectorhq.com/appengine/js/user_session.js';
+            document.body.appendChild(s2);
+          };
+        }, 100);
+      }
+    });
+  </script>
+
+</body>
+</html>
