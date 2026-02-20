@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17843692381"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17843692381');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <title>Thank You | Centerline Aviation</title>
+  <meta name="description" content="Thanks for booking your discovery flight. We'll be in touch within 24 hours to confirm your flight." />
+
+  <link rel="apple-touch-icon" href="https://pub-b9b491aee0b94c2c8e6c5d1dde4848db.r2.dev/public/images/logo/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="https://pub-b9b491aee0b94c2c8e6c5d1dde4848db.r2.dev/public/images/logo/favicon-96x96.png" />
+  <link rel="icon" type="image/x-icon" href="https://pub-b9b491aee0b94c2c8e6c5d1dde4848db.r2.dev/public/images/logo/favicon.ico" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            heading: ['Manrope', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Manrope font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body { font-family: 'Manrope', sans-serif; }
+
+    /* CTA button (white pill) */
+    .cta-button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      background: white;
+      color: #1f2937;
+      padding: 0 4px 0 24px;
+      border: none;
+      border-radius: 24px;
+      font-weight: 400;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+      height: 48px;
+      min-height: 48px;
+    }
+    .cta-button::after {
+      content: '→';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #1f2937;
+      color: white;
+      border-radius: 50%;
+      font-size: 1.25rem;
+      transform: rotate(-45deg);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      flex-shrink: 0;
+    }
+    .cta-button:hover { background: #cccccc; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18); }
+    .cta-button:hover::after { transform: rotate(0deg); }
+
+    /* Secondary button (glassmorphic) */
+    .secondary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 0.875rem 2rem;
+      border-radius: 100px;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      white-space: nowrap;
+    }
+    .secondary-button:hover { background: rgba(255, 255, 255, 0.25); }
+
+    /* Dark CTA button (inverted — for light backgrounds) */
+    .cta-button-dark {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      background: #1f2937;
+      color: white;
+      padding: 0 4px 0 24px;
+      border: none;
+      border-radius: 24px;
+      font-weight: 400;
+      font-size: 1rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+      height: 48px;
+      min-height: 48px;
+    }
+    .cta-button-dark::after {
+      content: '→';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: white;
+      color: #1f2937;
+      border-radius: 50%;
+      font-size: 1.25rem;
+      transform: rotate(-45deg);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      flex-shrink: 0;
+    }
+    .cta-button-dark:hover { background: #374151; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24); }
+    .cta-button-dark:hover::after { transform: rotate(0deg); }
+
+    /* Navbar transitions */
+    #lp-header {
+      transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #lp-header.lp-scrolled {
+      background-color: white;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.09);
+    }
+    #lp-nav {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      transition: padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #lp-header.lp-scrolled #lp-nav {
+      padding-top: 0.375rem;
+      padding-bottom: 0.375rem;
+    }
+    #lp-logo {
+      height: 4rem;
+      width: auto;
+      transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @media (min-width: 768px) { #lp-logo { height: 5rem; } }
+    #lp-header.lp-scrolled #lp-logo { height: 2.5rem; filter: invert(1); }
+    #lp-phone {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      color: white;
+      padding: 0.875rem 2rem;
+      border-radius: 100px;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  padding 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  font-size 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    #lp-phone:hover { background: rgba(255, 255, 255, 0.25); }
+    #lp-header.lp-scrolled #lp-phone {
+      background-color: #111827;
+      color: white;
+      padding: 0.5rem 1.25rem;
+      font-size: 0.875rem;
+    }
+    #lp-header.lp-scrolled #lp-phone:hover { background-color: #1f2937; }
+
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- ===================== HEADER ===================== -->
+  <!-- lp-scrolled applied by default: white bg, dark logo, dark phone button (no hero on this page) -->
+  <header id="lp-header" class="fixed top-0 left-0 right-0 z-[1000] lp-scrolled">
+    <nav id="lp-nav" class="flex justify-between items-center w-full px-8 max-w-[1200px] mx-auto">
+      <a href="https://centerlineaviationinc.com" aria-label="Centerline Aviation">
+        <svg id="lp-logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1031.17" role="img" aria-label="Centerline Aviation">
+          <defs><style>.cls-1{fill:none}.cls-2{fill:#fff}</style></defs>
+          <path class="cls-2" d="M61.23,386.9c-15.5,0-23.26-9.12-23.26-27.37v-27.73c0-18.25,7.57-27.37,22.72-27.37,11.57,0,19.26,6.38,23.08,19.14l20.57-7.87c-2.74-10.13-7.9-17.92-15.48-23.35-7.57-5.43-17.2-8.14-28.89-8.14-14.43,0-25.61,4.09-33.54,12.26-7.93,8.17-11.9,19.89-11.9,35.15v28.09c0,15.27,4,26.99,11.99,35.16,7.99,8.17,19.32,12.26,33.99,12.26,11.93,0,21.74-2.71,29.43-8.14,7.69-5.42,12.91-13.21,15.65-23.34l-20.57-7.69c-3.94,12.64-11.87,18.96-23.8,18.96Z"/>
+          <polygon class="cls-2" points="125.26 407.12 207.56 407.12 207.56 386.9 148.69 386.9 148.69 356.85 197 356.85 197 336.63 148.69 336.63 148.69 308.01 207.56 308.01 207.56 287.79 125.26 287.79 125.26 407.12"/>
+          <polygon class="cls-2" points="293.41 363.29 293.05 363.29 249.17 287.79 227.21 287.79 227.21 407.12 249.76 407.12 249.76 328.94 250.11 328.94 295.56 407.12 315.95 407.12 315.95 287.79 293.41 287.79 293.41 363.29"/>
+          <polygon class="cls-2" points="335.33 308.01 368.25 308.01 368.25 407.12 391.69 407.12 391.69 308.01 424.61 308.01 424.61 287.79 335.33 287.79 335.33 308.01"/>
+          <polygon class="cls-2" points="444.27 407.12 526.56 407.12 526.56 386.9 467.7 386.9 467.7 356.85 516.01 356.85 516.01 336.63 467.7 336.63 467.7 308.01 526.56 308.01 526.56 287.79 444.27 287.79 444.27 407.12"/>
+          <path class="cls-2" d="M633.35,324.82c0-12.52-3.55-21.83-10.64-27.91-7.1-6.08-17.92-9.12-32.47-9.12h-44.01v119.33h23.44v-45.44h17.94l23.21,45.44h26.48l-26.3-48.13c14.91-4.77,22.36-16.16,22.36-34.17ZM604.73,337.44c-3.22,2.68-8.17,4.03-14.85,4.03h-20.21v-33.45h20.21c13.12,0,19.68,5.61,19.68,16.82,0,5.72-1.61,9.93-4.83,12.61Z"/>
+          <polygon class="cls-2" points="680.59 287.79 655.95 287.79 655.95 407.12 739.99 407.12 739.99 386.9 680.59 386.9 680.59 287.79"/>
+          <polygon class="cls-2" points="863.22 363.29 862.88 363.29 820.67 287.79 799.55 287.79 799.55 407.12 821.23 407.12 821.23 328.94 821.58 328.94 865.28 407.12 884.08 407.12 884.08 287.79 863.22 287.79 863.22 363.29"/>
+          <polygon class="cls-2" points="985.46 308.01 985.46 287.79 901.54 287.79 901.54 407.12 985.46 407.12 985.46 386.9 925.44 386.9 925.44 356.85 974.7 356.85 974.7 336.63 925.44 336.63 925.44 308.01 985.46 308.01"/>
+          <rect class="cls-2" x="758.68" y="121.13" width="23.44" height="119.33"/>
+          <rect class="cls-2" x="758.68" y="621.1" width="23.44" height="119.33"/>
+          <polygon class="cls-2" points="680.91 39.95 770.37 39.95 859.82 39.95 859.82 269.34 884.79 269.34 884.79 14.99 770.37 14.99 655.95 14.99 655.95 269.34 680.91 269.34 680.91 39.95"/>
+          <polygon class="cls-2" points="859.82 991.21 768.56 991.21 767.58 991.21 680.91 991.21 680.91 856.85 655.95 854.12 655.95 1016.18 884.79 1016.18 884.79 853.62 859.82 856.35 859.82 991.21"/>
+          <polygon class="cls-2" points="655.95 814.45 680.91 813.58 680.91 593.87 655.95 593.87 655.95 814.45"/>
+          <polygon class="cls-2" points="859.82 813.74 884.79 814.62 884.79 593.87 859.82 593.87 859.82 813.74"/>
+          <path class="cls-2" d="M909.68,822.92l-56.87-2.5v.74l-64.98-2.27s-2.2.51-2.2-3.24c0,0-1.71-36.22-3.17-41.25,0,0-.26-2.02-3.45-3.27l-4.03-1.46c3.38-.81,9.13-.81,9.13-.81,0,0,10.59-.76,10.59-1.27s-6.4-.74-6.4-.74l-14.42-.25c-1.14-3.43-2.97-8.53-3.94-8.53s-2.87,5.24-4.01,8.67c-3.08-.14-14.92-.63-19.58.05,0,0-2.94,0,0,.49,2.94.51,6.61,1.51,10.54,1.51,0,0,5.7.21,8.02.9l-4.03,1.46c-3.2,1.25-3.45,3.27-3.45,3.27-1.46,5.03-3.18,41.25-3.18,41.25,0,3.75-2.2,3.24-2.2,3.24l-64.98,2.27v-.74l-56.9,2.5c-7.35,2.78-7.09,20.37-7.09,20.37h2.43c2.46-.25,5.4,0,5.4,0l120.14,13.07c3.43.25,4.66,4.03,4.66,4.03l1.46,7.3c8.6,37.73,10.57,54.83,10.57,54.83l.02.51-41.23,5.03c-3.17.25-3.92.76-3.92.76-2.71,1.74-1.97,12.31-1.97,12.31l47.33,2.27h.51c.23,4.8,1.46,17.85,1.46,17.85,0,0,1.2-13.05,1.46-17.85h.09l47.32-2.27s.74-10.57-1.97-12.31c0,0-.74-.51-3.92-.76l-40.81-4.96.02-.58s1.95-17.1,10.55-54.83l1.46-7.3s1.25-3.78,4.66-4.03l120.17-13.07s2.94-.25,5.38,0h2.46s.25-17.59-7.11-20.37Z"/>
+          <rect class="cls-2" x="758.68" y="287.79" width="23.44" height="119.33"/>
+          <path class="cls-2" d="M376.43,454.66l-38.7,118.91h23.31l6.37-20.68h45.28l7.09,20.68h22.97l-40.47-118.91h-25.86ZM373.57,532.92l16.05-52.59h.36l15.87,52.59h-32.28Z"/>
+          <polygon class="cls-2" points="480.28 542.78 479.73 542.72 453.12 454.66 428.74 454.66 465.43 573.56 491.68 573.56 528.21 454.66 506.84 454.66 480.28 542.78"/>
+          <rect class="cls-2" x="539.85" y="454.66" width="23.36" height="118.91"/>
+          <path class="cls-2" d="M656.91,573.56h22.97l-40.47-118.91h-25.86l-38.7,118.91h23.31l6.37-20.68h45.28l7.09,20.68ZM610.69,532.92l16.05-52.59h.36l15.87,52.59h-32.28Z"/>
+          <polygon class="cls-2" points="714.68 573.56 714.68 474.8 747.49 474.8 747.49 454.66 658.51 454.66 658.51 474.8 691.32 474.8 691.32 573.56 714.68 573.56"/>
+          <rect class="cls-2" x="758.72" y="454.66" width="23.36" height="118.91"/>
+          <path class="cls-2" d="M886.31,498.33c0-15.21-4.01-26.89-12.04-35.03-8.02-8.14-19.59-12.21-34.68-12.21s-26.51,4.07-34.59,12.21c-8.09,8.14-12.13,19.82-12.13,35.03v27.99c0,15.21,4.04,26.89,12.13,35.03,8.08,8.14,19.62,12.21,34.59,12.21s26.66-4.07,34.68-12.21c8.02-8.14,12.04-19.82,12.04-35.03v-27.99ZM862.95,526.14c0,18.18-7.79,27.28-23.36,27.28s-23.36-9.09-23.36-27.28v-27.63c0-18.18,7.78-27.28,23.36-27.28s23.36,9.09,23.36,27.28v27.63Z"/>
+          <polygon class="cls-2" points="962.99 454.66 962.99 529.89 962.63 529.89 918.89 454.66 897.01 454.66 897.01 573.56 919.48 573.56 919.48 495.66 919.83 495.66 965.13 573.56 985.46 573.56 985.46 454.66 962.99 454.66"/>
+        </svg>
+      </a>
+      <a href="tel:+18014770418" id="lp-phone" class="font-heading">
+        (801) 477-0418
+      </a>
+    </nav>
+  </header>
+
+  <!-- ===================== CONFIRMATION SECTION ===================== -->
+  <main class="min-h-screen flex flex-col justify-center items-center px-6 py-32 bg-white">
+    <div class="max-w-[700px] w-full text-center">
+
+      <!-- Checkmark icon -->
+      <div class="flex justify-center mb-8">
+        <div class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="font-heading font-medium text-gray-900 mb-6" style="font-size: clamp(2rem, 5vw, 2.5rem); line-height: 1.15;">
+        You're All Set
+      </h1>
+
+      <!-- Body text -->
+      <p class="text-gray-600 font-heading leading-relaxed mb-10 mx-auto" style="max-width: 550px; font-size: 1.0625rem;">
+        Thanks for booking your discovery flight. One of our team members will reach out within 24 hours to confirm your date and answer any questions. If you need to reach us sooner, call or text anytime.
+      </p>
+
+      <!-- Phone CTA -->
+      <div class="flex flex-col items-center gap-5">
+        <a href="tel:+18014770418" class="cta-button-dark font-heading font-normal">
+          (801) 477-0418
+        </a>
+
+        <!-- Secondary link -->
+        <a
+          href="https://centerlineaviationinc.com"
+          class="text-sm text-gray-500 hover:text-gray-800 underline underline-offset-2 transition-colors font-heading"
+        >
+          Learn more about Centerline Aviation
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-gray-950 text-white py-16">
+    <div class="max-w-[1200px] mx-auto px-8">
+      <div class="flex flex-col md:flex-row justify-between gap-12">
+        <div class="md:max-w-[350px]">
+          <div class="flex items-center gap-3 mb-6">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1031.17" class="h-12 w-auto" role="img" aria-label="Centerline Aviation">
+              <defs><style>.ft-cls-1{fill:none}.ft-cls-2{fill:#fff}</style></defs>
+              <path class="ft-cls-2" d="M61.23,386.9c-15.5,0-23.26-9.12-23.26-27.37v-27.73c0-18.25,7.57-27.37,22.72-27.37,11.57,0,19.26,6.38,23.08,19.14l20.57-7.87c-2.74-10.13-7.9-17.92-15.48-23.35-7.57-5.43-17.2-8.14-28.89-8.14-14.43,0-25.61,4.09-33.54,12.26-7.93,8.17-11.9,19.89-11.9,35.15v28.09c0,15.27,4,26.99,11.99,35.16,7.99,8.17,19.32,12.26,33.99,12.26,11.93,0,21.74-2.71,29.43-8.14,7.69-5.42,12.91-13.21,15.65-23.34l-20.57-7.69c-3.94,12.64-11.87,18.96-23.8,18.96Z"/>
+              <polygon class="ft-cls-2" points="125.26 407.12 207.56 407.12 207.56 386.9 148.69 386.9 148.69 356.85 197 356.85 197 336.63 148.69 336.63 148.69 308.01 207.56 308.01 207.56 287.79 125.26 287.79 125.26 407.12"/>
+              <polygon class="ft-cls-2" points="293.41 363.29 293.05 363.29 249.17 287.79 227.21 287.79 227.21 407.12 249.76 407.12 249.76 328.94 250.11 328.94 295.56 407.12 315.95 407.12 315.95 287.79 293.41 287.79 293.41 363.29"/>
+              <polygon class="ft-cls-2" points="335.33 308.01 368.25 308.01 368.25 407.12 391.69 407.12 391.69 308.01 424.61 308.01 424.61 287.79 335.33 287.79 335.33 308.01"/>
+              <polygon class="ft-cls-2" points="444.27 407.12 526.56 407.12 526.56 386.9 467.7 386.9 467.7 356.85 516.01 356.85 516.01 336.63 467.7 336.63 467.7 308.01 526.56 308.01 526.56 287.79 444.27 287.79 444.27 407.12"/>
+              <path class="ft-cls-2" d="M633.35,324.82c0-12.52-3.55-21.83-10.64-27.91-7.1-6.08-17.92-9.12-32.47-9.12h-44.01v119.33h23.44v-45.44h17.94l23.21,45.44h26.48l-26.3-48.13c14.91-4.77,22.36-16.16,22.36-34.17ZM604.73,337.44c-3.22,2.68-8.17,4.03-14.85,4.03h-20.21v-33.45h20.21c13.12,0,19.68,5.61,19.68,16.82,0,5.72-1.61,9.93-4.83,12.61Z"/>
+              <polygon class="ft-cls-2" points="680.59 287.79 655.95 287.79 655.95 407.12 739.99 407.12 739.99 386.9 680.59 386.9 680.59 287.79"/>
+              <polygon class="ft-cls-2" points="863.22 363.29 862.88 363.29 820.67 287.79 799.55 287.79 799.55 407.12 821.23 407.12 821.23 328.94 821.58 328.94 865.28 407.12 884.08 407.12 884.08 287.79 863.22 287.79 863.22 363.29"/>
+              <polygon class="ft-cls-2" points="985.46 308.01 985.46 287.79 901.54 287.79 901.54 407.12 985.46 407.12 985.46 386.9 925.44 386.9 925.44 356.85 974.7 356.85 974.7 336.63 925.44 336.63 925.44 308.01 985.46 308.01"/>
+              <rect class="ft-cls-2" x="758.68" y="121.13" width="23.44" height="119.33"/>
+              <rect class="ft-cls-2" x="758.68" y="621.1" width="23.44" height="119.33"/>
+              <polygon class="ft-cls-2" points="680.91 39.95 770.37 39.95 859.82 39.95 859.82 269.34 884.79 269.34 884.79 14.99 770.37 14.99 655.95 14.99 655.95 269.34 680.91 269.34 680.91 39.95"/>
+              <polygon class="ft-cls-2" points="859.82 991.21 768.56 991.21 767.58 991.21 680.91 991.21 680.91 856.85 655.95 854.12 655.95 1016.18 884.79 1016.18 884.79 853.62 859.82 856.35 859.82 991.21"/>
+              <polygon class="ft-cls-2" points="655.95 814.45 680.91 813.58 680.91 593.87 655.95 593.87 655.95 814.45"/>
+              <polygon class="ft-cls-2" points="859.82 813.74 884.79 814.62 884.79 593.87 859.82 593.87 859.82 813.74"/>
+              <path class="ft-cls-2" d="M909.68,822.92l-56.87-2.5v.74l-64.98-2.27s-2.2.51-2.2-3.24c0,0-1.71-36.22-3.17-41.25,0,0-.26-2.02-3.45-3.27l-4.03-1.46c3.38-.81,9.13-.81,9.13-.81,0,0,10.59-.76,10.59-1.27s-6.4-.74-6.4-.74l-14.42-.25c-1.14-3.43-2.97-8.53-3.94-8.53s-2.87,5.24-4.01,8.67c-3.08-.14-14.92-.63-19.58.05,0,0-2.94,0,0,.49,2.94.51,6.61,1.51,10.54,1.51,0,0,5.7.21,8.02.9l-4.03,1.46c-3.2,1.25-3.45,3.27-3.45,3.27-1.46,5.03-3.18,41.25-3.18,41.25,0,3.75-2.2,3.24-2.2,3.24l-64.98,2.27v-.74l-56.9,2.5c-7.35,2.78-7.09,20.37-7.09,20.37h2.43c2.46-.25,5.4,0,5.4,0l120.14,13.07c3.43.25,4.66,4.03,4.66,4.03l1.46,7.3c8.6,37.73,10.57,54.83,10.57,54.83l.02.51-41.23,5.03c-3.17.25-3.92.76-3.92.76-2.71,1.74-1.97,12.31-1.97,12.31l47.33,2.27h.51c.23,4.8,1.46,17.85,1.46,17.85,0,0,1.2-13.05,1.46-17.85h.09l47.32-2.27s.74-10.57-1.97-12.31c0,0-.74-.51-3.92-.76l-40.81-4.96.02-.58s1.95-17.1,10.55-54.83l1.46-7.3s1.25-3.78,4.66-4.03l120.17-13.07s2.94-.25,5.38,0h2.46s.25-17.59-7.11-20.37Z"/>
+              <rect class="ft-cls-2" x="758.68" y="287.79" width="23.44" height="119.33"/>
+              <path class="ft-cls-2" d="M376.43,454.66l-38.7,118.91h23.31l6.37-20.68h45.28l7.09,20.68h22.97l-40.47-118.91h-25.86ZM373.57,532.92l16.05-52.59h.36l15.87,52.59h-32.28Z"/>
+              <polygon class="ft-cls-2" points="480.28 542.78 479.73 542.72 453.12 454.66 428.74 454.66 465.43 573.56 491.68 573.56 528.21 454.66 506.84 454.66 480.28 542.78"/>
+              <rect class="ft-cls-2" x="539.85" y="454.66" width="23.36" height="118.91"/>
+              <path class="ft-cls-2" d="M656.91,573.56h22.97l-40.47-118.91h-25.86l-38.7,118.91h23.31l6.37-20.68h45.28l7.09,20.68ZM610.69,532.92l16.05-52.59h.36l15.87,52.59h-32.28Z"/>
+              <polygon class="ft-cls-2" points="714.68 573.56 714.68 474.8 747.49 474.8 747.49 454.66 658.51 454.66 658.51 474.8 691.32 474.8 691.32 573.56 714.68 573.56"/>
+              <rect class="ft-cls-2" x="758.72" y="454.66" width="23.36" height="118.91"/>
+              <path class="ft-cls-2" d="M886.31,498.33c0-15.21-4.01-26.89-12.04-35.03-8.02-8.14-19.59-12.21-34.68-12.21s-26.51,4.07-34.59,12.21c-8.09,8.14-12.13,19.82-12.13,35.03v27.99c0,15.21,4.04,26.89,12.13,35.03,8.08,8.14,19.62,12.21,34.59,12.21s26.66-4.07,34.68-12.21c8.02-8.14,12.04-19.82,12.04-35.03v-27.99ZM862.95,526.14c0,18.18-7.79,27.28-23.36,27.28s-23.36-9.09-23.36-27.28v-27.63c0-18.18,7.78-27.28,23.36-27.28s23.36,9.09,23.36,27.28v27.63Z"/>
+              <polygon class="ft-cls-2" points="962.99 454.66 962.99 529.89 962.63 529.89 918.89 454.66 897.01 454.66 897.01 573.56 919.48 573.56 919.48 495.66 919.83 495.66 965.13 573.56 985.46 573.56 985.46 454.66 962.99 454.66"/>
+            </svg>
+          </div>
+          <p class="text-gray-400 leading-relaxed mb-6 font-heading">
+            Professional flight training in Spanish Fork, Utah. Modern Diamond fleet, flexible scheduling, and pay-as-you-go pricing from $149.
+          </p>
+          <p class="text-gray-500 text-sm font-heading">Hangar #122 &bull; Spanish Fork Airport (SPK)</p>
+        </div>
+        <div>
+          <h4 class="text-base font-medium mb-6 text-gray-300 font-heading">Contact</h4>
+          <ul class="space-y-3">
+            <li><a href="tel:+18014770418" class="text-gray-400 hover:text-white transition-colors font-heading">(801) 477-0418</a></li>
+            <li><a href="mailto:contact@centerlineaviationinc.com" class="text-gray-400 hover:text-white transition-colors font-heading">Email Us</a></li>
+            <li class="text-gray-500 text-sm pt-2 font-heading">Mon–Fri: 8am–5pm<br />Sat: 8am–3pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-gray-500 text-sm font-heading">&copy; 2026 Centerline Aviation INC. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="/privacy-policy" class="text-gray-500 hover:text-white text-sm transition-colors font-heading">Privacy Policy</a>
+            <a href="/terms-of-service" class="text-gray-500 hover:text-white text-sm transition-colors font-heading">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var header = document.getElementById('lp-header');
+      function onScroll() {
+        header.classList.toggle('lp-scrolled', window.scrollY > 50);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+    })();
+  </script>
+
+</body>
+</html>

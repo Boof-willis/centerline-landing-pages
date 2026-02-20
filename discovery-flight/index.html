@@ -887,11 +887,6 @@
           });
           if (!res.ok) throw new Error('Failed');
 
-          // TODO: Replace CONVERSION_LABEL_HERE with actual label from Google Ads
-          if (typeof gtag === 'function') {
-            gtag('event', 'conversion', { send_to: 'AW-17843692381/CONVERSION_LABEL_HERE', value: 149.0, currency: 'USD' });
-          }
-
           window.location.href = '/discovery-flight-thank-you';
         } catch (err) {
           errorDiv.style.display = 'block';
